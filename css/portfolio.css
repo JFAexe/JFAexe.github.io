@@ -1,0 +1,170 @@
+/* Header -----------------------*/
+.Header {
+    height: 100vh;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.HeaderTitle    {
+    font-size: 32px;
+    margin-top: -115px;
+}
+
+.HeaderLogo {
+    font-size: 56px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.HeaderArrow    {
+    font-size: 32px;
+    width: 28px;
+    height: 32px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -14px;
+}
+
+.Arrow  {
+    text-decoration: none;
+    color: #747d8c; 
+}
+
+.Arrow:hover    {
+    color: #2f3542;
+}
+
+
+/* Portfolio --------------------*/
+.Portfolio  {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.PortfolioTitle {
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+    margin-bottom: 60px;
+}
+
+.PortfolioItem  {
+    margin-bottom: 24px
+}
+
+.PortfolioImage {
+    margin-bottom: 5px;
+}
+
+.PortfolioImage img {
+    border-bottom: 2px solid #57606f;
+}
+
+.PortfolioItemTitle {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.PortfolioItemTitle a   {
+    text-decoration: none;
+    color: #747d8c;
+    border-bottom: 1px solid #f1f2f6;
+}
+
+.PortfolioItemTitle a:hover {
+    color: #2f3542;
+    border-color: #2f3542;
+}
+
+.PortfolioDescription p {
+    margin-top: 0px;
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+
+/* Social -----------------------*/
+.Social {
+    padding-top: 10px;
+    padding-bottom: 70px;
+}
+
+.SocialTitle   {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.SocialIcons  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.SocialIcons  a   {
+    font-size: 42px;
+    text-decoration: none;
+    color: #747d8c;
+    margin-right: 10px;
+}
+
+.SocialIcons  a:last-child    {
+    margin-right: 0px;
+}
+
+.SocialIcons a:hover {
+    color: #2f3542;
+}
+
+
+/* Footer -----------------------*/
+.Footer {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.Footer p   {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.FooterCopyright    {
+    font-size: 16px;
+    text-align: center;
+    line-height: normal;
+}
+
+
+/* Media ------------------------*/
+@media (max-width: 1160px)  {
+    .Header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .HeaderTitle    {
+        font-size: 26px;
+        margin-top: -100px;
+    }    
+    .HeaderLogo {
+        font-size: 46px;
+    }
+    .PortfolioImage img {
+        max-width: 100%;
+        height: auto;
+    }
+    .SocialIcons  a   {
+        font-size: 32px;
+    }
+    .Footer {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}

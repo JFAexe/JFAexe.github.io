@@ -1,0 +1,69 @@
+/* Header -----------------------*/
+.Header {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.HeaderTitle    {
+    font-size: 32px;
+    margin-top: -60px;
+}
+
+.HeaderLogo {
+    font-size: 56px;
+    text-transform: uppercase;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.HeaderIcon {
+    font-size: 32px;
+    margin-top: -10px;
+}
+
+.IconImage {
+    margin-bottom: 5px;
+}
+
+
+/* Footer -----------------------*/
+.Footer {
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.Footer p   {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.FooterCopyright    {
+    font-size: 16px;
+    text-align: center;
+    line-height: normal;
+}
+
+
+/* Media ------------------------*/
+@media (max-width: 1160px)  {
+    .Header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .HeaderTitle    {
+        font-size: 26px;
+        margin-top: -100px;
+    }    
+    .HeaderLogo {
+        font-size: 46px;
+    }
+
+    .IconImage img  {
+        max-width: 100%;
+        height: auto;
+    }
+}

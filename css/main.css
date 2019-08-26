@@ -47,13 +47,35 @@ a:hover {
 }
 
 
+/* Arrow ------------------------*/
+.HeaderArrow    {
+    font-size: 32px;
+    width: 28px;
+    height: 32px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -14px;
+}
+
+.Arrow  {
+    text-decoration: none;
+    color: #747d8c; 
+}
+
+.Arrow:hover    {
+    color: #2f3542;
+}
+
+
 /* Button -----------------------*/
 .Button  {
-    padding-top: 5px;
     font-size: 24px;
     text-align: center;
     line-height: normal;
     text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .Button a    {

@@ -55,15 +55,15 @@
         padding-right: 15px;
     }
     .HeaderTitle    {
-        font-size: 26px;
-        margin-top: -100px;
+        font-size: 24px;
+        margin-top: 10px;
     }    
     .HeaderLogo {
-        font-size: 46px;
+        font-size: 42px;
     }
 
     .IconImage img  {
-        max-width: 100%;
+        max-width: 70%;
         height: auto;
     }
 }

@@ -17,8 +17,12 @@
 .HeaderLogo {
     font-size: 56px;
     text-transform: uppercase;
-    margin-top: -10px;
+    margin-top: -80px; /* -10px */
     margin-bottom: 10px;
+}
+
+.svgLogo    {
+    height: 400px;
 }
 
 
@@ -106,24 +110,6 @@
 }
 
 
-/* Footer -----------------------*/
-.Footer {
-    padding-top: 50px;
-    padding-bottom: 80px;
-}
-
-.Footer p   {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.FooterCopyright    {
-    font-size: 16px;
-    text-align: center;
-    line-height: normal;
-}
-
-
 /* Media ------------------------*/
 @media (max-width: 1160px)  {
     .Header {
@@ -136,6 +122,10 @@
     }    
     .HeaderLogo {
         font-size: 46px;
+        margin-top: -50px;
+    }
+    .svgLogo    {
+        height: 220px;
     }
     .PortfolioImage img {
         max-width: 100%;
@@ -143,9 +133,5 @@
     }
     .SocialIcons  a   {
         font-size: 32px;
-    }
-    .Footer {
-        padding-top: 0px;
-        padding-bottom: 0px;
     }
 }

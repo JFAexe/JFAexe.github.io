@@ -1,3 +1,11 @@
+/*  Colors https://flatuicolors.com/palette/cn 
+    Background  #f1f2f6
+    Font        #57606f
+    Unhovered   #747d8c
+    Hovered     #2f3542
+*/
+
+
 /* Theme ------------------------*/
 html, body  {
     background-color: #f1f2f6;
@@ -25,6 +33,8 @@ a:hover {
     transition: 0.2s ease-out;
 }
 
+
+/* Container --------------------*/
 .Container  {
     width: 1140px;
     margin-left: auto;
@@ -94,6 +104,25 @@ a:hover {
     font-size: 32px;
 }
 
+
+/* Footer -----------------------*/
+.Footer {
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.Footer p   {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.FooterCopyright    {
+    font-size: 16px;
+    text-align: center;
+    line-height: normal;
+}
+
+
 /* Media ------------------------*/
 @media (max-width: 1160px)  {
     .Container  {
@@ -106,5 +135,9 @@ a:hover {
         padding-left: 15px;
         padding-right: 15px;
         text-align: center;
+    }
+    .Footer {
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 }

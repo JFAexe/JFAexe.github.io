@@ -28,7 +28,7 @@
 
 /* License ----------------------*/
 .License  {
-    padding-top: 100px;
+    padding-top: 140px;
     padding-bottom: 80px;
 }
 
@@ -51,8 +51,8 @@
 
 /* Footer -----------------------*/
 .Footer {
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 
@@ -71,11 +71,15 @@
     }
     .License  {
         padding-top: 0px;
-        padding-bottom: 30px;
+        padding-bottom: 0px;
     }    
     .LicenseText pre  {
         font-size: 10px;
         padding-top: 20px;
         margin-bottom: 30px;
+    }
+    .Footer {
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 }

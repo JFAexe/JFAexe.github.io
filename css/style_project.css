@@ -30,24 +30,6 @@
 }
 
 
-/* Footer -----------------------*/
-.Footer {
-    padding-top: 60px;
-    padding-bottom: 80px;
-}
-
-.Footer p   {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.FooterCopyright    {
-    font-size: 16px;
-    text-align: center;
-    line-height: normal;
-}
-
-
 /* Media ------------------------*/
 @media (max-width: 1160px)  {
     .Header {

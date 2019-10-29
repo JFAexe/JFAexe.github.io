@@ -6,7 +6,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
 }
 
 .HeaderTitle    {
@@ -17,19 +16,20 @@
 .HeaderLogo {
     font-size: 56px;
     text-transform: uppercase;
-    margin-top: -80px; /* -10px */
+    margin-top: -120px;
     margin-bottom: 10px;
 }
 
 .svgLogo    {
-    height: 400px;
+    height: 420px;
+    margin-top: -10px;
 }
 
 
 /* Portfolio --------------------*/
 .Portfolio  {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 70px;
 }
 
 .PortfolioTitle {
@@ -37,7 +37,7 @@
     text-align: center;
     text-transform: uppercase;
     padding-top: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 90px;
 }
 
 .PortfolioItem  {
@@ -78,11 +78,12 @@
 
 /* Social -----------------------*/
 .Social {
-    padding-top: 10px;
-    padding-bottom: 70px;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 
 .SocialTitle   {
+    margin-bottom: -10px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -125,11 +126,15 @@
         margin-top: -50px;
     }
     .svgLogo    {
-        height: 220px;
+        height: 200px;
     }
     .PortfolioImage img {
         max-width: 100%;
         height: auto;
+    }
+    .Social {
+        margin-top: -100px;
+        padding-bottom: 10px;
     }
     .SocialIcons  a   {
         font-size: 32px;

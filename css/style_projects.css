@@ -37,11 +37,19 @@
     text-align: center;
     text-transform: uppercase;
     padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+.ProjectsCategory {
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 40px;
     margin-bottom: 60px;
 }
 
 .ProjectsContainer  {
-    width: 520px;
+    width: 1140px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -51,6 +59,19 @@
     height: 174px;
 }
 
+.Row:after  {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.ProjectColumn  {
+    width: 1140px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
 
 /* Media ------------------------*/
@@ -72,5 +93,9 @@
     .ProjectFrame   {
         width: 300px;
         height: 144px;
+    }
+    .ProjectColumn {
+        width: 100%;
+        flex-direction: column;
     }
 }

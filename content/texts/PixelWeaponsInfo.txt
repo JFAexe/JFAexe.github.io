@@ -1,0 +1,151 @@
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ JUST ANOTHER CONTENT LICENSE                                                                            │
+│ Version 1.1, December 2019                                                                              │
+│                                                                                                         │
+│ Copyright (C) 2017 - Present "Hardline Supply" by Alexandr "JFA.exe" Konichenko (jfa35ru@gmail.com)     │
+│                                                                                                         │
+│ The above copyright notice and terms and conditions notice below                                        │
+│ shall be packed with all copies of the content.                                                         │
+│                                                                                                         │
+│ Terms and conditions for use and distribution:                                                          │
+│                                                                                                         │
+│ 1.  If content IS PAID you need to PURCHASE it to get ability for use, modification and redistribution. │
+│     Otherwise if content IS FREE, you are GRANTED ability for any use, modification and redistribution. │
+│     You can do everything you want with content, only if it does not contradicts with terms below.      │
+│                                                                                                         │
+│ 2.  You SHALL name original creator of content, if content used in your project.                        │
+│     If content was modified you SHALL name original creator and modifier.                               │
+│                                                                                                         │
+│ 3.  You ARE ALLOWED to redistribute MODIFIED content only. If you want to share the ORIGINAL content,   │
+│     you SHALL contact with original creator or previous modifiers, if content IS NOT FREE.              │
+│                                                                                                         │
+│     ( The content begins being modified only when modifier did noticeable changes.                      |
+│     Changes that are NOT included in modification: license, logo, structure of unchanged content. )     │
+│                                                                                                         │
+│ 4.  You CAN change the license of content distributed under this license, otherwise this license        │
+│     shall be included. You SHALL name original creator of content, if license was changed.              │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────────┬───────────────────────────────────┬───────────────────────────────────┬───────────────────────────────────┐
+│ Pixel weaponry                    │ Version: 21st December 2019       │ Done: 111                         │ TODO: Redraw; Attachments; 95 new │
+├───────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────┤
+│ Pistols                           │ Automatic pistols                 │ Revolvers                         │ Submachine guns                   │
+├───────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────┤
+│ SIG P250     (.45 ACP)            │ Glock 18c      (9x19)             │ Rhino 40DS      (.40 S&W)         │ Ingram Mac-11/9 (9x19)            │
+│ FN-509       (9x19)               │ Ots-33 Pernach (9x18)             │ Mateba 2006     (.375)            │ HK MP5k         (9x19)            │
+│ M1911        (.45 ACP)            │ Vz.61 Scorpion (.32 ACP)          │ Mateba 6 Unica  (.375)            │ HK MP5/10       (10mm)            │
+│ PL-15        (9x19)               │ Beretta 93R    (9x19)             │ Rhino 60DS      (.40 S&W)         │ UZI             (.45 ACP)         │
+│ Glock 34     (9x19)               │                                   │ S&W 500         (.500 S&W)        │ MP9             (9x19)            │
+│ FN FNP-45    (.45 ACP)            │                                   │ Raging Bull 454 (.44 Magnum)      │ Kriss Vector    (.45 ACP)         │
+│ FN FiveSeven (5,7x28)             │                                   │                                   │ Ingram Mac-10   (.45 ACP)         │
+│ Beretta 92   (9x19)               │                                   │                                   │ P90             (5,7x28)          │
+│ HK USP       (.45 ACP)            │                                   │                                   │ SR-2m Veresk    (9x21)            │
+│ Desert Eagle (.375)               │                                   │                                   │ HK UMP9         (9x19)            │
+│                                   │                                   │                                   │ HK MP7          (4,6x30)          │
+│                                   │                                   │                                   │ HK UMP45        (.45 ACP)         │
+│                                   │                                   │                                   │ HK MP5          (9x19)            │
+│                                   │                                   │                                   │ PP-19 Bizon     (9x19)            │
+│                                   │                                   │                                   │ HK MP5SD        (9x19)            │
+├───────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────┤
+│ 10                                │ 4                                 │ 6                                 │ 15                                │
+├───────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────┤
+│ Assault rifles                    │ light machine guns                │ Shotguns                          │ Sniper rifles                     │
+├───────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────┤
+│ SR-3m Vikhr      (9x39)           │ L86LSW (5.56x45)                  │ Spas-12       (12 gauge)          │ VSS           (9x39)              │
+│ AKS-74u          (5.45×39)        │ RPK74m (5.45×39)                  │ Mossber 500   (12 gauge)          │ VSK94         (9x39)              │
+│ AUG A3           (5.56x45)        │ RPK12  (5.45×39)                  │ M1014         (12 gauge)          │ Remington 700 (.308 Winchester)   │
+│ Tar-21           (5.45×39)        │                                   │ M3            (12 gauge)          │ Scout         (.308 Winchester)   │
+│ SG-553           (5.56x45)        │                                   │ Remington 870 (12 gauge)          │ L96A1         (.338 Lapua Magnum) │
+│ V308 (R6S)       (7,62x51)        │                                   │ AA-12         (12 gauge)          │ SVD           (7,62x54R)          │
+│ Famas G3         (5.56x45)        │                                   │ Toz-34        (12 gauge)          │ Barrett M98B  (.338 Lapua Magnum) │
+│ L85A1            (5.56x45)        │                                   │                                   │ Barrett M82   (.50 BMG)           │
+│ AUG A2           (5.56x45)        │                                   │                                   │                                   │
+│ M4A1             (5.56x45)        │                                   │                                   │                                   │
+│ HK416            (5.56x45)        │                                   │                                   │                                   │
+│ FN Scar-H        (7,62x51)        │                                   │                                   │                                   │
+│ SG-556           (5.56x45)        │                                   │                                   │                                   │
+│ AS Val           (9x39)           │                                   │                                   │                                   │
+│ Bushmaster ACR   (5.56x45)        │                                   │                                   │                                   │
+│ M16A4            (5.56x45)        │                                   │                                   │                                   │
+│ Remington R5 RGP (5.56x45)        │                                   │                                   │                                   │
+│ AK-74            (5.45×39)        │                                   │                                   │                                   │
+│ AK-12            (5.45×39)        │                                   │                                   │                                   │
+│ AEK-971          (5.45×39)        │                                   │                                   │                                   │
+│ HK G3A3          (7,62x51)        │                                   │                                   │                                   │
+├───────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────┤
+│ 21                                │ 3                                 │ 7                                 │ 8                                 │
+├───────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────┤
+│ Grenade and Rocket Launchers      │ Custom weapons                    │ Melee                             │ Grenades                          │
+├───────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────┤
+│ HK69A1 (40×46)                    │ Toolgun                           │ Flashlight                        │ M67                               │
+│ M79    (40×46)                    │ Unicorn's head                    │ Screwdriver                       │ M26                               │
+│ AT4                               │ Gravity gun λ                     │ Wrench                            │ MK3A2                             │
+│ RPG-7                             │ Not a Flamethrower                │ Hammer                            │ Smoke                             │
+│                                   │ Dubstep Gun                       │ Military Knife                    │ Flashbang                         │
+│                                   │ The Origin                        │ ACB-90                            │ Molotov                           │
+│                                   │ The Second Generation             │ Hand Drill                        │                                   │
+│                                   │                                   │ Ice Pick                          │                                   │
+│                                   │                                   │ Tomahawk                          │                                   │
+│                                   │                                   │ Briefcase                         │                                   │
+│                                   │                                   │ Axe                               │                                   │
+│                                   │                                   │ Machette                          │                                   │
+│                                   │                                   │ Pipe                              │                                   │
+│                                   │                                   │ Crowbar                           │                                   │
+│                                   │                                   │ Sledge Hammer                     │                                   │
+│                                   │                                   │ Fire Axe                          │                                   │
+│                                   │                                   │ Bat                               │                                   │
+│                                   │                                   │ Shovel                            │                                   │
+│                                   │                                   │ Katana                            │                                   │
+│                                   │                                   │ Lightsaber Mk.0                   │                                   │
+│                                   │                                   │ Lightsaber Gen.1                  │                                   │
+├───────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────┤
+│ 4                                 │ 7                                 │  21                               │ 5                                 │
+├───────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────┤
+│ Attachments                       │ Shells                            │ Parts                             │                                   │
+├───────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────┤
+│ Docter                            │ 9x18 9x19 9x21 .32 ACP .45 ACP    │ Triggers                          │                                   │
+│ Holosight small                   │ 10mm Auto 4,6x30 5,7x28           │ Mag eject triggers                │                                   │
+│ Aimpoint Micro                    │ 9x39 .375 .40 S&W                 │ Bolts                             │                                   │
+│ Zpoint                            │ 5.45×39 .44 Magnum .500 S&W       │ Ironsights                        │                                   │
+│ Red Dot                           │ 5.56x45                           │                                   │                                   │
+│ EOtech2                           │ 7,62x51                           │                                   │                                   │
+│ Aimpoint M2                       │ 7,62x54R .308 Winchester          │                                   │                                   │
+│ Elcan (C79)                       │ .338 Lapua Magnum                 │                                   │                                   │
+│ Acog                              │ .50 BMG                           │                                   │                                   │
+│ Cobra                             │ 12 gauge                          │                                   │                                   │
+│ Sniper scopes (expand)            │ 12 gauge green                    │                                   │                                   │
+│ Silencers (expand)                │ 40×46                             │                                   │                                   │
+│ Vertical grip                     │                                   │                                   │                                   │
+│ Stubby grip                       │                                   │                                   │                                   │
+│ Angled grip                       │                                   │                                   │                                   │
+│ Veresk grip                       │                                   │                                   │                                   │
+│ MP7 grip                          │                                   │                                   │                                   │
+│ AUG grip                          │                                   │                                   │                                   │
+│ Lasersight                        │                                   │                                   │                                   │
+│ Flashlight                        │                                   │                                   │                                   │
+├───────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────┼───────────────────────────────────┤
+│ 30                                │ 12                                │  21                               │                                   │
+└───────────────────────────────────┴───────────────────────────────────┴───────────────────────────────────┴───────────────────────────────────┘
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ TODO                       More to come and will be done in random order                               │
+├────────────────────┬────────────────────┬────────────────────┬────────────────────┬────────────────────┤
+│ Mag-7              │ Negev NG7          │ ZM LR-300          │ IWI Galil ACE      │ HK P30L            │
+│ Saiga-12c          │ PKM                │ MGL                │ DSR-1              │ PP-2000            │
+│ USAS-12            │ Intervention       │ China Lake         │ PP91 Kedr          │ Scorpion EVO3      │
+│ Jericho 941        │ H&K G28            │ K1A                │ KSG12              │ M249 Para          │
+│ Serbu Super Shorty │ SR-25              │ GM-94              │ FIM-92 Stinger     │ VSSK Vychlop       │
+│ AK-15 7.62         │ PDR C              │ REMINGTON MSR      │ PB 6P9             │ HK 21              │
+│ OC-14              │ KaC PDW            │ M4 vltor           │ G36C               │ S12K               │
+│ K2                 │ DD MK 18 Mod1      │ AS50               │ FMG-9              │ Taurus Judge       │
+│ PP19-01 Vityaz     │ Fort-12            │ AK Alpha           │ SV-98              │ NTW-20             │
+│ AN-94              │ Sig mpx            │ AK5c               │ SAI GRY AR-15      │ WA2000             │
+│ H&K G36K           │ Honey badger       │ PGM 338            │ FRF-2              │ Striker            │
+│ RMB-93             │ AK-9               │ MSR-1              │ CZ75 auto          │ XM8                │
+│ Auto-Mag 180       │ RPD                │ Sako TRG           │ S&W Sigma          │ PSG1               │
+│ P99                │ PM                 │ Blaser R93         │ MK20 SSR           │ G2 Pistol/Rifle    │
+│ SA58               │ Stechkin APS       │ AX338              │ M60                │ Mp-445             │
+│ MK14 ebr           │ Saritch 308        │ M3A1               │ PMM-12             │                    │
+│ L82A2              │ SVU-AS             │ Vz.58              │ 9A91               │                    │
+│ SKS                │ S&W M&P 9          │ Micro UZI          │ M240 BAR           │                    │
+│ MK43-mod-0         │ Barrett M95        │ ARX-160            │ M1897              │                    │
+│ Ithaca-37          │ Beretta MX4 Storm  │ Barrett REC-07     │ ТТ                 │                    │
+└────────────────────┴────────────────────┴────────────────────┴────────────────────┴────────────────────┘

@@ -1,88 +1,82 @@
+<!--
+    Personal light landing page v2.0
+    Copyright 2020 Alexandr 'JFAexe' Konichenko
+    Uses
+        Normalize.css
+            https://github.com/necolas/normalize.css
+        Anonymous Pro
+            https://fonts.google.com/specimen/Anonymous+Pro
+-->
+
 <!DOCTYPE html>
-<html lang="en">
-<head>   
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>JFA.exe's website</title>
-    <link rel="shortcut icon" type="image/x-icon" href="content/icon.png">
-    <!-- Load from web -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300&display=swap">
-    <script src="https://kit.fontawesome.com/7c99149a85.js"> </script>
-    <!-- Load css -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/style_portfolio.css">
+<html lang = 'en'>
 
+<head>
+    <meta
+        charset = 'UTF-8'
+    >
+    <meta
+        name    = 'viewport'
+        content = 'width = device-width, initial-scale = 0.8'
+    >
+
+    <title>Home | JFAexe</title>
+
+    <link 
+        rel     = 'shortcut icon'
+        type    = 'image/x-icon'
+        href    = 'icon.png'
+    >
+    <link
+        rel     = 'stylesheet'
+        href    = 'https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap'
+    >
+    <link
+        rel     = 'stylesheet'
+        href    = 'normalize.css'
+    >
+    <link
+        rel     = 'stylesheet'
+        href    = 'style.css'
+    >
 </head>
+
 <body>
+    <div class = 'container'>
 
-    <!-- Header ------------------------- -->
-    <div class="Header">
-        <div class="HeaderLogo">Portfolio</div>
-        <img class="svgLogo" src="content/images/logoimage.svg" alt="JFA.exe">
-        <div class="HeaderArrow">   
-            <a class="Arrow" href="#PortfolioTitle"><i class="fas fa-chevron-down"></i></a>
-        </div>
-    </div>
+        <header>
+            <h1>JFAexe</h1> 
+            <p>coding and drawing stuff</p>
+        </header>
 
-    <!-- Portfolio ---------------------- -->
-    <div class="Portfolio">
-        <div class="Container">
-            <div class="PortfolioTitle" id="PortfolioTitle">Projects</div>
-            <div class="Row">
-                <div class="Column">
-                    <div class="PortfolioItem">
-                        <div class="PortfolioImage"><img src="content/images/projectsimage.png" alt="Projects"></div>
-                        <div class="PortfolioItemTitle"><a href="projects.html">Projets</a></div>
-                        <div class="PortfolioDescription"><p><i class="fas fa-dice-d6"></i> Just projects from Itch.io</p></div>
-                    </div>
+        <nav>
+            <a target = '_blank' href = 'https://jfaexe.itch.io/'>Itch.io</a>
+            <a target = '_blank' href = 'https://github.com/JFAexe'>Github</a>
+        </nav>
+
+        <main>
+            <div class = 'block'>
+                <div class = 'block_title'>Projects</div>
+
+                <div class = 'block_obj'>
+                    <div    class   = 'block_obj_date'>Apr 20, 2019</div>
+                    <a      target  = '_blank' href = 'https://jfaexe.itch.io/simple-pixel-spaceships'>Simple Pixel Spaceships</a>
                 </div>
-                <div class="Column">
-                    <div class="PortfolioItem">
-                        <div class="PortfolioImage"><img src="content/images/pixelweapons.png" alt="Pixel Weapons"></div>
-                        <div class="PortfolioItemTitle"><a href="project.html">Pixel Weapons</a></div>
-                        <div class="PortfolioDescription"><p><i class="fas fa-dice-d6"></i> Just pixel weapons</p></div>
-                    </div>
+
+                <div class = 'block_obj'>
+                    <div    class   = 'block_obj_date'>Apr 26, 2019</div>
+                    <a      target  = '_blank' href = 'https://jfaexe.itch.io/nt-like-sprites-pack'>NT Like Sprites Pack</a>
                 </div>
-                <div class="Column">
-                    <div class="PortfolioItem">
-                        <div class="PortfolioImage"><img src="content/images/licenseimage.png" alt="License Image"></div>
-                        <div class="PortfolioItemTitle"><a href="license.html">License</a></div>
-                        <div class="PortfolioDescription"><p><i class="fas fa-file-alt"></i> Just another content license</p></div>
-                    </div>
+
+                <div class = 'block_obj'>
+                    <div    class   = 'block_obj_date'>Oct 22, 2019</div>
+                    <a      target  = '_blank' href = 'https://jfaexe.itch.io/lowrez-action-pack'>Lowrez Action Pack</a>
                 </div>
             </div>
-        </div>
+        </main>
+
     </div>
-
-    <!-- Social ------------------------- -->
-    <div class="Social">
-        <div class="Container">
-            <p class="SocialTitle">Check my profiles</p>
-            <p class="SocialIcons">
-                <a class="IconLink" target="_blank" href="https://jfaexe.itch.io/"                                  title="Itch.io">    <i class="fab fa-itch-io"></i>      </a>
-                <a class="IconLink" target="_blank" href="https://vk.com/jfaexe"                                    title="Vkontakte">  <i class="fab fa-vk"></i>           </a>
-                <a class="IconLink" target="_blank" href="https://steamcommunity.com/id/jfaexe/"                    title="Steam" >     <i class="fab fa-steam-symbol"></i> </a>
-                <a class="IconLink" target="_blank" href="https://www.youtube.com/channel/UCud3fefAuRLQ4iqyvxfMZtg" title="YouTube" >   <i class="fab fa-youtube"></i>      </a>
-                <a class="IconLink" target="_blank" href="https://github.com/JFAexe"                                title="Github">     <i class="fab fa-github"></i>       </a>
-            </p>
-            <p class="SocialTitle">Contact me</p>
-            <p class="SocialIcons">
-                <a class="IconLink" title="jfa35ru@gmail.com">  <i class="fas fa-envelope"></i> </a>
-                <a class="IconLink" title="JFA.exe#1217">       <i class="fab fa-discord"></i>  </a>
-            </p>
-
-        </div>
-    </div>
-
-    <!-- Footer ------------------------- -->
-    <div class="Footer">
-        <div class="Container">
-            <div class="FooterColumn">    <p class="FooterCopyright">Copyright <i class="fas fa-copyright"></i> 2019 Alexandr "JFA.exe" Konichenko</p>  </div>
-        </div>
-    </div>
-
 </body>
+
 </html>

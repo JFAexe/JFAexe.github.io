@@ -1,11 +1,11 @@
 <!--
-    Personal light landing page v2.0
-    Copyright 2020 Alexandr 'JFAexe' Konichenko
-    Uses
-        Normalize.css
-            https://github.com/necolas/normalize.css
-        Anonymous Pro
-            https://fonts.google.com/specimen/Anonymous+Pro
+	Personal light landing page v2.1
+	Copyright 2020 Alexandr 'JFAexe' Konichenko
+	Uses
+		Normalize.css
+			https://github.com/necolas/normalize.css
+		Anonymous Pro
+			https://fonts.google.com/specimen/Anonymous+Pro
 -->
 
 <!DOCTYPE html>
@@ -13,84 +13,86 @@
 <html lang = 'en'>
 
 <head>
-    <meta
-        charset = 'UTF-8'
-    >
-    <meta
-        name    = 'viewport'
-        content = 'width = device-width, initial-scale = 0.8'
-    >
+	<meta charset = 'UTF-8'>
+	<meta
+		name	= 'viewport'
+		content	= 'width = device-width, initial-scale = 0.8'
+	>
 
-    <title>Home | JFAexe</title>
+	<title>Home | JFAexe</title>
 
-    <link 
-        rel     = 'shortcut icon'
-        type    = 'image/x-icon'
-        href    = 'icon.png'
-    >
-    <link
-        rel     = 'stylesheet'
-        href    = 'https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap'
-    >
-    <link
-        rel     = 'stylesheet'
-        href    = 'normalize.css'
-    >
-    <link
-        rel     = 'stylesheet'
-        href    = 'style.css'
-    >
+	<link
+		rel		= 'shortcut icon'
+		type	= 'image/x-icon'
+		href	= 'icon.png'
+	>
+	<link
+		rel		= 'stylesheet'
+		href	= 'https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap'
+	>
+	<link
+		rel		= 'stylesheet'
+		href	= 'normalize.min.css'
+	>
+	<link
+		rel		= 'stylesheet'
+		href	= 'style.css'
+	>
 </head>
 
 <body>
-    <div class = 'container'>
+	<div class = 'container'>
 
-        <header>
-            <h1>JFAexe</h1> 
-            <p>coding and drawing stuff</p>
-        </header>
+		<header>
+			<h1>JFAexe</h1> 
+			<p>coding and drawing stuff</p>
+		</header>
 
-        <nav>
-            <a target = '_blank' href = 'https://jfaexe.itch.io/'>Itch.io</a>
-            <a target = '_blank' href = 'https://github.com/JFAexe'>Github</a>
-        </nav>
+		<nav>
+			<a target = '_blank' href = 'https://jfaexe.itch.io/'>Itch.io</a>
+			<a target = '_blank' href = 'https://github.com/JFAexe'>Github</a>
+			<span> | </span>
+			<a id = '_theme_btn' href = '#'>Dark</a>
+			<script src = 'theme.js'></script>
+		</nav>
 
-        <main>
-            <div class = 'block'>
-                <div class = 'block_title'>Game Assets</div>
+		<main>
+			<div class = 'block'>
+				<div class = 'title'>Game Assets</div>
 
-                <div class = 'block_obj'>
-                    <div    class   = 'block_obj_date'>Apr 20, 2019</div>
-                    <a      target  = '_blank' href = 'https://jfaexe.itch.io/simple-pixel-spaceships'>Simple Pixel Spaceships</a>
-                </div>
+				<div class = 'obj'>
+					<div class	= 'date'>Apr 20, 2019</div>
+					<a	 target	= '_blank' href = 'https://jfaexe.itch.io/simple-pixel-spaceships'>Simple Pixel Spaceships</a>
+				</div>
 
-                <div class = 'block_obj'>
-                    <div    class   = 'block_obj_date'>Apr 26, 2019</div>
-                    <a      target  = '_blank' href = 'https://jfaexe.itch.io/nt-like-sprites-pack'>NT Like Sprites Pack</a>
-                </div>
+				<div class = 'obj'>
+					<div class	= 'date'>Apr 26, 2019</div>
+					<a	 target	= '_blank' href = 'https://jfaexe.itch.io/nt-like-sprites-pack'>NT Like Sprites Pack</a>
+				</div>
+				
+				<div class = 'obj'>
+					<div class	= 'date'>Oct 22, 2019</div>
+					<a	 target	= '_blank' href = 'https://jfaexe.itch.io/lowrez-action-pack'>Lowrez Action Pack</a>
+				</div>
+			</div>
 
-                <div class = 'block_obj'>
-                    <div    class   = 'block_obj_date'>Oct 22, 2019</div>
-                    <a      target  = '_blank' href = 'https://jfaexe.itch.io/lowrez-action-pack'>Lowrez Action Pack</a>
-                </div>
-            </div>
+			<div class = 'block'>
+				<div class = 'title'>Gmod Projects</div>
+				
+				<div class = 'obj'>
+					<div class	= 'date'>Apr 16, 2020</div>
+					<a	 target	= '_blank' href = 'https://github.com/JFAexe/Gmod-BaseWars'>BaseWars gamemode</a>
+					<span style	= 'font-size: 16px;'>[W.I.P.]</span>
+				</div>
 
-            <div class = 'block'>
-                <div class = 'block_title'>Gmod Projects</div>
+				<div class = 'obj'>
+					<div class	= 'date'>Jul 22, 2020</div>
+					<a	 target	= '_blank' href = 'https://github.com/JFAexe/Gmod-Custom-Quake-Base'>Custom Quake Base</a>
+				</div>
+			</div>
+		</main>
 
-                <div class = 'block_obj'>
-                    <div    class   = 'block_obj_date'>May 16, 2020</div>
-                    <a      target  = '_blank' href = 'https://github.com/JFAexe/Gmod-BaseWars'>W.I.P. BaseWars gamemode</a>
-                </div>
-
-                <div class = 'block_obj'>
-                    <div    class   = 'block_obj_date'>Jul 22, 2020</div>
-                    <a      target  = '_blank' href = 'https://github.com/JFAexe/Gmod-Custom-Quake-Base'>Custom Quake Base</a>
-                </div>
-            </div>
-        </main>
-
-    </div>
+	</div>
 </body>
 
 </html>

@@ -1,131 +1,146 @@
 /*
-    Personal light landing page v2.0
-    Copyright 2020 Alexandr 'JFAexe' Konichenko
-    Uses
-        Normalize.css
-            https://github.com/necolas/normalize.css
-        Anonymous Pro
-            https://fonts.google.com/specimen/Anonymous+Pro
+	Personal light landing page v2.1
+	Copyright 2020 Alexandr 'JFAexe' Konichenko
+	Uses
+		Normalize.css
+			https://github.com/necolas/normalize.css
+		Anonymous Pro
+			https://fonts.google.com/specimen/Anonymous+Pro
 */
 
 /* Base style */
+:root {
+	--color-white:		#fff;
+	--color-black:		#000;
+	--color-lgray:		#eee;
+	--color-dgray:		#111;
+}
+
+.darkmode {
+	--color-back:		var(--color-black);
+	--color-text:		var(--color-white);
+	--color-code:		var(--color-dgray);
+}
+
 html {
-    scroll-behavior:    smooth;
-    overflow-y:         scroll;
+	--color-back:		var(--color-white);
+	--color-text:		var(--color-black);
+	--color-code:		var(--color-lgray);
+	scroll-behavior:	smooth;
+	overflow-y:			scroll;
 }
 
 body {
-    background:         #fff;
-    color:              #000;
-    font-family:        'Anonymous Pro', monospace;
-    line-height:        1.6;
-    margin:             120px auto;
-    padding:            0 30px;
+	background:			var(--color-back);
+	color:				var(--color-text);
+	font-family:		'Anonymous Pro', monospace;
+	line-height:		1.6;
+	margin:				120px auto;
+	padding:			0 30px;
+	transition: 		all ease-in-out 0.25s;
+	cursor: 			default;
 }
 
 header {
-    text-decoration:    none;
-    margin:             -4px;
+	text-decoration:	none;
+	margin:				-4px;
 }
 
 header h1 {
-    color:              #fff;
-    background:         #000;
-    font-size:          48px;
-    margin-top:         0;
-    margin-bottom:      0;
-    padding-left:       0.5ch;
+	color:				var(--color-back);
+	background:			var(--color-text);
+	font-size:			48px;
+	margin-top:			0;
+	margin-bottom:		0;
+	padding-left:		0.5ch;
 }
 
 header p {
-    margin-top:         4px;
-    margin-bottom:      0;
-    padding-left:       0.5ch;
+	margin-top:			4px;
+	margin-bottom:		0;
+	padding-left:		0.5ch;
 }
 
 nav {
-    font-size:          20px;
-    padding-top:        0.5ch;
+	font-size:			20px;
+	padding-top:		0.5ch;
 }
 
 h1 {
-    font-weight:        normal;
+	font-weight:		normal;
 }
 
 a {
-    color:              #000;
-    text-decoration:    none;
-    border-bottom:      1px solid #000;
+	color:				var(--color-text);
+	text-decoration:	none;
+	border-bottom:		1px solid var(--color-text);
 }
 
 a:hover {
-    color:              #fff;
-    background:         #000;
-    text-decoration:    none;
-    padding:            4px;
-    margin:             -4px;
+	color:				var(--color-back);
+	background:			var(--color-text);
+	text-decoration:	none;
+	padding:			4px;
+	margin:				-4px;
 }
 
 pre {
-    word-wrap:          break-word;
-    white-space:        pre-wrap;
+	word-wrap:			break-word;
+	white-space:		pre-wrap;
 }
 
 hr {
-    border:             none;
-    background-color:   #000;
-    height:             1px;
+	border:				none;
+	background-color:	var(--color-text);
+	height:				1px;
 }
 
 
 /* Adaptive? container */
 .container {
-    margin:             auto;
-    max-width:          740px;
+	margin:				auto;
+	max-width:			740px;
 }
 
 
 /* Block container */
 .block {
-    display:            inline-block;
+	display:			flex-box;
 }
 
-.block_title {
-    font-size:          28px;
+.block .title {
+	font-size:			28px;
 }
 
-.block_obj {
-    font-size:          20px;
-    padding-left:       1ch;
+.block .obj {
+	font-size:			20px;
+	padding-left:		1ch;
 }
 
-.block_obj_date {
-    display:            inline-block;
-    font-size:          18px;
+.block .obj .date {
+	display:			inline-block;
+	font-size:			18px;
 }
 
-.block .block_obj .block_obj_date:after {
-    content:            ' - ';
+.block .obj .date:after {
+	content:			' - ';
 }
 
-.block_code {
-    background-color:   #eee;
-    border-bottom:      1px solid #000;
-    font-size:          14px;
-    margin:             1ch;
-    padding:            1ch;
+.block .code {
+	background-color:	var(--color-code);
+	border-bottom:		1px solid var(--color-text);
+	font-size:			14px;
+	tab-size:			4;
+	margin:				1ch;
+	padding:			1ch;
 }
 
 
 /* Scrollbar */
 body::-webkit-scrollbar {
-    width:              1em;
+	width:				1em;
 }
 
 body::-webkit-scrollbar-thumb {
-    border-right:       12px solid #ddd;
-}
-
-body::-webkit-scrollbar-thumb:hover {
-    border-right:       12px solid #ccc;
+	border-right:		12px solid var(--color-code);
 }

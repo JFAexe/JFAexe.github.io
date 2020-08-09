@@ -1,0 +1,95 @@
+/*
+    Tic Tac Toe game experiment
+    Copyright 2020 Alexandr 'JFAexe' Konichenko
+*/
+
+:root {
+    --cell-size:           100px;
+    --x-width:             calc(var(--cell-size) * 0.1);
+    --x-height:            calc(var(--cell-size) * 1.0);
+    --o-outer:             calc(var(--cell-size) * 0.85);
+    --o-inner:             calc(var(--cell-size) * 0.65);
+}
+
+.board {
+    display:               grid;
+    justify-content:       center;
+    grid-template-columns: repeat(3, auto);
+    margin-top:            20px;
+}
+
+.cell {
+    background-color:      var(--color-text);
+    width:                 var(--cell-size);
+    height:                var(--cell-size);
+    border:                1px solid var(--color-back);
+    position:              relative;
+    display:               flex;
+    justify-content:       center;
+    align-items:           center;
+    cursor:                pointer;
+}
+
+.cell.x, .cell.o {
+    cursor:                default;
+}
+
+.cell.x::before,
+.cell.x::after,
+.board.x .cell:not(.x):not(.o):hover::before,
+.board.x .cell:not(.x):not(.o):hover::after {
+    background-color:      var(--color-back);
+    content:               '';
+    width:                 var(--x-width);
+    height:                var(--x-height);
+    position:              absolute;
+}
+
+.cell.x::before,
+.board.x .cell:not(.x):not(.o):hover::before {
+    transform:             rotate(45deg);
+}
+
+.cell.x::after,
+.board.x .cell:not(.x):not(.o):hover::after {
+    transform:             rotate(-45deg);
+}
+
+.cell.o::before,
+.cell.o::after,
+.board.o .cell:not(.x):not(.o):hover::before,
+.board.o .cell:not(.x):not(.o):hover::after {
+    content:               '';
+    border-radius:         100%;
+    position:              absolute;
+}
+
+.cell.o::before,
+.board.o .cell:not(.x):not(.o):hover::before {
+    background-color:      var(--color-back);
+    width:                 var(--o-outer);
+    height:                var(--o-outer);
+}
+
+.cell.o::after,
+.board.o .cell:not(.x):not(.o):hover::after {
+    background-color:      var(--color-text);
+    width:                 var(--o-inner);
+    height:                var(--o-inner);
+}
+
+.info {
+    display:               flex;
+    flex-direction:        column;
+    justify-content:       center;
+    align-items:           center;
+}
+
+.info .text {
+    font-size:             32px;
+    text-align:            center;
+}
+
+.info .btn.hide {
+    display:               none;
+}

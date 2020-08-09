@@ -1,0 +1,77 @@
+<!--
+    Tic Tac Toe game experiment
+    Copyright 2020 Alexandr 'JFAexe' Konichenko
+-->
+
+<!DOCTYPE html>
+
+<html lang = 'en'>
+
+<head>
+    <meta charset = 'UTF-8'>
+    <meta
+        name    = 'viewport'
+        content = 'width = device-width, initial-scale = 0.8'
+    >
+
+    <title>Tic Tac Toe | JFAexe</title>
+
+    <link
+        rel  = 'shortcut icon'
+        type = 'image/x-icon'
+        href = 'tictactoe.png'
+    >
+    <link
+        rel  = 'stylesheet'
+        href = 'https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap'
+    >
+    <link
+        rel  = 'stylesheet'
+        href = '../normalize.min.css'
+    >
+    <link
+        rel  = 'stylesheet'
+        href = '../style.css'
+    >
+
+    <script src = '../theme.js' defer></script>
+
+    <link
+        rel  = 'stylesheet'
+        href = 'tictactoe.css'
+    >
+
+    <script src = 'tictactoe.js' defer></script>
+</head>
+
+<body>
+    <div class = 'container'>
+
+        <header>
+            <h1>Tic Tac Toe</h1>
+            <p>no ai for some time</p>
+        </header>
+
+        <nav>
+            <a href = '../index.html'>Home</a>
+            <span> | </span>
+            <a id = '_theme_btn' href = '#'>Dark</a>
+        </nav>
+
+        <main>
+            <div class = 'board' id = '_board'>
+                <div class = 'cell' data-cell></div> <div class = 'cell' data-cell></div> <div class = 'cell' data-cell></div>
+                <div class = 'cell' data-cell></div> <div class = 'cell' data-cell></div> <div class = 'cell' data-cell></div>
+                <div class = 'cell' data-cell></div> <div class = 'cell' data-cell></div> <div class = 'cell' data-cell></div>
+            </div>
+
+            <div class = 'info'>
+                <span class = 'text' id = '_title'>turn</span>
+                <a  class = 'btn hide' id = '_restart_btn' href = '#'>Restart</a>
+            </div>
+        </main>
+
+    </div>
+</body>
+
+</html>

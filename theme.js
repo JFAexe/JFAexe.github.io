@@ -1,29 +1,27 @@
 /*
-	Personal light landing page v2.1
-	Copyright 2020 Alexandr 'JFAexe' Konichenko
-	Uses
-		Normalize.css
-			https://github.com/necolas/normalize.css
-		Anonymous Pro
-			https://fonts.google.com/specimen/Anonymous+Pro
+    Personal light landing page v2.2
+    Copyright 2020 Alexandr 'JFAexe' Konichenko
+    Uses
+        Normalize.css
+            https://github.com/necolas/normalize.css
+        Anonymous Pro
+            https://fonts.google.com/specimen/Anonymous+Pro
 */
 
-const lsg = localStorage
-const doc = document
-const btn = doc.getElementById('_theme_btn')
-const lst = doc.body.classList
-const cls = 'darkmode'
+const doc = document, lsg = localStorage,
+      btn = doc.getElementById('_theme_btn'), lst = doc.body.classList,
+      cls = 'darkmode', thm = 'theme', lgt = 'Light', drk = 'Dark'
 
-if (JSON.parse(lsg.getItem('theme'))) {
-	btn.textContent = lst.contains(cls) ? 'Dark' : 'Light'
+if (JSON.parse(lsg.getItem(thm))) {
+    btn.textContent = lst.contains(cls) ? drk : lgt
 
-	lst.add(cls)
+    lst.add(cls)
 }
 
-btn.addEventListener('click', function() {
-	this.textContent = lst.contains(cls) ? 'Dark' : 'Light'
+btn.addEventListener('click', () => {
+    btn.textContent = lst.contains(cls) ? drk : lgt
 
-	lsg.setItem('theme', lst.toggle(cls))
+    lsg.setItem(thm, lst.toggle(cls))
 })
 
 // Maybe js isn't that terrible? but === still a bruh moment

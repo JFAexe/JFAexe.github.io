@@ -1,27 +1,29 @@
 /*
-    Personal light landing page v2.2
+    Personal light landing page
     Copyright 2020 Alexandr 'JFAexe' Konichenko
     Uses
-        Normalize.css
+        Minimized Normalize.css
             https://github.com/necolas/normalize.css
         Anonymous Pro
             https://fonts.google.com/specimen/Anonymous+Pro
 */
 
-const doc = document, lsg = localStorage,
-      btn = doc.getElementById('_theme_btn'), lst = doc.body.classList,
-      cls = 'darkmode', thm = 'theme', lgt = 'Light', drk = 'Dark'
+const
+    doc = document, lsg = localStorage,
+    btn = doc.getElementById('_theme_btn'),
+    bcl = doc.body.classList,
+    cls = 'darkmode', thm = 'theme'
+
+let updateThemeButton = () => btn.textContent = bcl.contains(cls) ? 'Dark' : 'Light'
 
 if (JSON.parse(lsg.getItem(thm))) {
-    btn.textContent = lst.contains(cls) ? drk : lgt
+    updateThemeButton()
 
-    lst.add(cls)
+    bcl.add(cls)
 }
 
 btn.addEventListener('click', () => {
-    btn.textContent = lst.contains(cls) ? drk : lgt
+    updateThemeButton()
 
-    lsg.setItem(thm, lst.toggle(cls))
+    lsg.setItem(thm, bcl.toggle(cls))
 })
-
-// Maybe js isn't that terrible? but === still a bruh moment

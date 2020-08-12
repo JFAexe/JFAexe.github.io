@@ -1,0 +1,64 @@
+<!--
+    Snake game experiment
+    Copyright 2020 Alexandr 'JFAexe' Konichenko
+-->
+
+<!DOCTYPE html>
+
+<html lang = 'en'>
+
+<head>
+    <meta charset = 'UTF-8'>
+    <meta name = 'viewport' content = 'width = device-width, initial-scale = 0.8'>
+
+    <link rel = 'shortcut icon' type = 'image/x-icon' href = 'snake.png'>
+
+    <title>Snake | JFAexe</title>
+
+    <link rel = 'stylesheet' href = 'https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap'>
+    <link rel = 'stylesheet' href = '../normalize.min.css'>
+    <link rel = 'stylesheet' href = '../style.css'>
+    <link rel = 'stylesheet' href = 'snake.css'>
+
+    <script src = '../theme.js' defer> </script>
+    <script src = 'snake.js' defer> </script>
+</head>
+
+<body>
+    <header>
+        <h1>Snake</h1>
+        <p>eat squares</p>
+    </header>
+
+    <nav>
+        <a href = '../index.html'>Home</a>
+        <span> | </span>
+        <a id = '_theme_mobile' href = '#'>Mobile</a>
+        <span> | </span>
+        <a id = '_theme_btn' href = '#'>Dark</a>
+    </nav>
+
+    <main>
+        <div class = 'window'>
+            <canvas width = '300' height = '300' id = 'game'></canvas>
+        </div>
+
+        <div class = 'info'>
+            <span class = 'text' id = '_title'>score: 0</span>
+
+            <div class = 'buttons'>
+                <a id = '_pause_btn' href = '#'>Play</a>
+                <a id = '_restart_btn' href = '#'>Restart</a>
+            </div>
+
+            <div id = '_buttons' class = 'buttons'>
+                <input type = 'button' class = 'button mobile' value = '&#129044;' onclick = 'moveLeft()'>
+                <input type = 'button' class = 'button mobile' value = '&#129046;' onclick = 'moveRight()'>
+                <input type = 'button' class = 'button mobile' value = '&#129045;' onclick = 'moveUp()'>
+                <input type = 'button' class = 'button mobile' value = '&#129047;' onclick = 'moveDown()'>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

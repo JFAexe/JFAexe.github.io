@@ -6,12 +6,12 @@
 :root {
     --cell-size:           100px;
     --x-width:             calc(var(--cell-size) * 0.1);
-    --x-height:            calc(var(--cell-size) * 1.0);
-    --o-outer:             calc(var(--cell-size) * 0.85);
-    --o-inner:             calc(var(--cell-size) * 0.65);
+    --x-height:            calc(var(--cell-size) * 1.1);
+    --o-outer:             calc(var(--cell-size) * 0.9);
+    --o-inner:             calc(var(--cell-size) * 0.7);
 }
 
-.board {
+.window {
     display:               grid;
     justify-content:       center;
     grid-template-columns: repeat(3, auto);
@@ -19,7 +19,7 @@
 }
 
 .cell {
-    background-color:      var(--color-text);
+    background:            var(--color-text);
     width:                 var(--cell-size);
     height:                var(--cell-size);
     border:                1px solid var(--color-back);
@@ -36,9 +36,9 @@
 
 .cell.x::before,
 .cell.x::after,
-.board.x .cell:not(.x):not(.o):hover::before,
-.board.x .cell:not(.x):not(.o):hover::after {
-    background-color:      var(--color-back);
+.window.x .cell:not(.x):not(.o):hover::before,
+.window.x .cell:not(.x):not(.o):hover::after {
+    background:            var(--color-back);
     content:               '';
     width:                 var(--x-width);
     height:                var(--x-height);
@@ -46,34 +46,34 @@
 }
 
 .cell.x::before,
-.board.x .cell:not(.x):not(.o):hover::before {
+.window.x .cell:not(.x):not(.o):hover::before {
     transform:             rotate(45deg);
 }
 
 .cell.x::after,
-.board.x .cell:not(.x):not(.o):hover::after {
+.window.x .cell:not(.x):not(.o):hover::after {
     transform:             rotate(-45deg);
 }
 
 .cell.o::before,
 .cell.o::after,
-.board.o .cell:not(.x):not(.o):hover::before,
-.board.o .cell:not(.x):not(.o):hover::after {
+.window.o .cell:not(.x):not(.o):hover::before,
+.window.o .cell:not(.x):not(.o):hover::after {
     content:               '';
     border-radius:         100%;
     position:              absolute;
 }
 
 .cell.o::before,
-.board.o .cell:not(.x):not(.o):hover::before {
-    background-color:      var(--color-back);
+.window.o .cell:not(.x):not(.o):hover::before {
+    background:            var(--color-back);
     width:                 var(--o-outer);
     height:                var(--o-outer);
 }
 
 .cell.o::after,
-.board.o .cell:not(.x):not(.o):hover::after {
-    background-color:      var(--color-text);
+.window.o .cell:not(.x):not(.o):hover::after {
+    background:            var(--color-text);
     width:                 var(--o-inner);
     height:                var(--o-inner);
 }
@@ -90,6 +90,6 @@
     text-align:            center;
 }
 
-.info .btn.hide {
-    display:               none;
+.info a {
+    font-size:             24px;
 }

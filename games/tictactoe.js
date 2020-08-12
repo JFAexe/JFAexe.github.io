@@ -6,7 +6,6 @@
 /* Variables */
 const cells = doc.querySelectorAll('[data-cell]'),
       title = doc.getElementById('_title'),
-      rsbtn = doc.getElementById('_restart_btn'),
       board = doc.getElementById('_board'),
       blst  = board.classList
 
@@ -23,20 +22,20 @@ let turn
 
 
 /* Setup */
-rsbtn.addEventListener('click', () => { beginGame() })
+doc.getElementById('_restart_btn').addEventListener('click', () => { beginGame() })
 
 beginGame()
 
 
 /* Game */
 function beginGame() {
-    rsbtn.classList.add('hide')
-
     cells.forEach(cell => {
         resetCell(cell)
 
         cell.addEventListener('click', handleClick, { once: true })
     })
+
+    turn = false
 
     updateVisuals()
 }
@@ -47,12 +46,10 @@ function finishGame(draw = false) {
     if (draw) {
         text = 'draw'
     } else {
-        text = (turn ? c_o : c_x) + ' won'
+        text = (turn ? c_o : c_x).toUpperCase() + ' won'
     }
 
     title.textContent = text
-
-    rsbtn.classList.remove('hide')
 
     blst.remove(c_x)
     blst.remove(c_o)
@@ -63,8 +60,8 @@ function finishGame(draw = false) {
 
 /* Handler */
 function handleClick(event) {
-    const cell = event.target,
-          curr = turn ? c_o : c_x
+    let cell = event.target,
+        curr = turn ? c_o : c_x
 
     updateCell(cell, curr)
 
@@ -85,8 +82,10 @@ function updateCell(cell, state) {
 }
 
 function resetCell(cell) {
-    cell.classList.remove(c_x)
-    cell.classList.remove(c_o)
+    let clst = cell.classList
+
+    clst.remove(c_x)
+    clst.remove(c_o)
 
     cell.removeEventListener('click', handleClick)
 }
@@ -96,14 +95,14 @@ function updateTurn() {
 }
 
 function updateVisuals() {
-    const curr = turn ? c_o : c_x
+    let curr = turn ? c_o : c_x
 
     blst.remove(c_x)
     blst.remove(c_o)
 
     blst.add(curr)
 
-    title.textContent = curr + '\'s turn'
+    title.textContent = curr.toUpperCase() + '\'s turn'
 }
 
 

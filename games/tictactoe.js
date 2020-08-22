@@ -4,19 +4,18 @@
 */
 
 /* Variables */
-const cells = doc.querySelectorAll('[data-cell]'),
-      title = doc.getElementById('_title'),
-      board = doc.getElementById('_board'),
-      blst  = board.classList
-
-const c_x = 'x',
-      c_o = 'o'
-
-const combinations = [
-    [0, 1, 2], [3, 4, 5], [6, 7, 8],
-    [0, 3, 6], [1, 4, 7], [2, 5, 8],
-    [0, 4, 8], [2, 4, 6]
-]
+const
+    cells        = doc.querySelectorAll('[data-cell]'),
+    title        = doc.getElementById('_title'),
+    board        = doc.getElementById('_board'),
+    blst         = board.classList,
+    c_x          = 'x',
+    c_o          = 'o',
+    combinations = [
+        [0, 1, 2], [3, 4, 5], [6, 7, 8],
+        [0, 3, 6], [1, 4, 7], [2, 5, 8],
+        [0, 4, 8], [2, 4, 6]
+    ]
 
 let turn
 
@@ -108,15 +107,9 @@ function updateVisuals() {
 
 /* Checkers */
 function checkWin(state) {
-    return combinations.some(combo => {
-        return combo.every(index => {
-            return cells[index].classList.contains(state)
-        })
-    })
+    return combinations.some(combo => combo.every(index => cells[index].classList.contains(state)))
 }
 
 function checkDraw() {
-    return [...cells].every(cell => {
-        return cell.classList.contains(c_x) || cell.classList.contains(c_o)
-    })
+    return [...cells].every(cell => cell.classList.contains(c_x) || cell.classList.contains(c_o))
 }

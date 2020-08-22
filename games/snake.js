@@ -8,31 +8,28 @@ const
     canvas  = document.getElementById('game'),
     context = canvas.getContext('2d'),
     pausbtn = doc.getElementById('_pause_btn'),
-    title   = doc.getElementById('_title')
+    title   = doc.getElementById('_title'),
+    canvW   = canvas.width,
+    canvH   = canvas.height,
+    cW      = canvW * 0.1,
+    cH      = canvH * 0.1,
+    speeed  = 10,
+    grid    = 10
 
-const
-    canvW = canvas.width,
-    canvH = canvas.height,
-    cW    = canvW * 0.1,
-    cH    = canvH * 0.1
-
-const
-    speeed = 10,
-    grid   = 10
-
-let freeze = 0,
-    fail   = false
-    paused = true
-
-let score = 0
+let
+    freeze = 0,
+    fail   = false,
+    paused = true,
+    score  = 0
 
 
 /* Short functions */
-const getThemeColor  = () => getComputedStyle(doc.body).color
-const randomizeInt   = (min, max) => Math.floor(Math.random() * (max - min)) + min
-const runGame        = () => requestAnimationFrame(processGame)
-const clearCanv      = () => context.clearRect(0, 0, canvW, canvH)
-const updatePauseBtn = () => pausbtn.textContent = paused ? 'Play' : 'Pause'
+const
+    getThemeColor  = () => getComputedStyle(doc.body).color,
+    randomizeInt   = (min, max) => Math.floor(Math.random() * (max - min)) + min,
+    runGame        = () => requestAnimationFrame(processGame),
+    clearCanv      = () => context.clearRect(0, 0, canvW, canvH),
+    updatePauseBtn = () => pausbtn.textContent = paused ? 'Play' : 'Pause'
 
 
 /* Setup */
@@ -114,9 +111,9 @@ function togglePause() {
 function drawPaused() {
     clearCanv()
 
-    context.fillStyle   = getThemeColor()
-    context.font        = '64px Anonymous Pro'
-    context.textAlign   = 'center'
+    context.fillStyle = getThemeColor()
+    context.font      = '64px Anonymous Pro'
+    context.textAlign = 'center'
     context.fillText('Paused', canvW * 0.5, canvH * 0.5)
 }
 
@@ -177,10 +174,22 @@ doc.getElementById('_restart_btn').addEventListener('click', () => { resetGame()
 document.addEventListener('keydown', (event) => {
     if (paused) { return }
 
-    if (event.which === 37) { moveLeft() }
-    if (event.which === 39) { moveRight() }
-    if (event.which === 38) { moveUp() }
-    if (event.which === 40) { moveDown() }
+    switch(event.which) {
+        case 37:
+            moveLeft()
+            break
+        case 39:
+            moveRight()
+            break
+        case 38:
+            moveUp()
+            break
+        case 40:
+            moveDown()
+            break
+        default:
+            break
+    }
 })
 
 function moveLeft() {

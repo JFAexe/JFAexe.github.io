@@ -1,10 +1,12 @@
 /*
     Personal light landing page
+
     Copyright 2020 Alexandr 'JFAexe' Konichenko
+
     Uses
         Minimized Normalize.css
             https://github.com/necolas/normalize.css
-        Anonymous Pro
+        Anonymous Pro font
             https://fonts.google.com/specimen/Anonymous+Pro
 */
 
@@ -36,10 +38,11 @@ body {
     background:      var(--color-back);
     color:           var(--color-text);
     font-family:     'Anonymous Pro', monospace;
+    font-size:       16px;
     line-height:     1.6;
-    margin:          70px auto 0;
+    margin:          6vh auto 0;
     max-width:       740px;
-    padding:         30px;
+    padding:         4vw 4vh;
     transition:      background 0.2s ease-in-out, color 0.2s ease-in-out;
     cursor:          default;
 }
@@ -55,16 +58,17 @@ header h1 {
     font-size:       48px;
     margin:          0;
     padding-left:    0.5ch;
+    word-break:      break-all;
 }
 
 header p {
-    margin:          4px 0 0 0;
+    margin:          4px 0;
     padding-left:    0.5ch;
 }
 
 nav {
     font-size:       20px;
-    padding-top:     0.5ch;
+    margin-top:      0.5ch;
 }
 
 h1 {
@@ -102,7 +106,7 @@ hr {
 
 ul {
     list-style:      square outside;
-    margin:          0 2ch 0;
+    margin:          0 2ch;
     padding-left:    2ch;
 }
 
@@ -110,41 +114,40 @@ ul li::before {
     width:           2ch;
 }
 
-ul .title {
+ul .ul__title {
     margin-left:     -2ch;
 }
 
 
-/* Block container */
-.block .title {
+/* Elements */
+.content-block {
+    margin:          0.5ch auto;
+}
+
+.block__title {
     font-size:       28px;
 }
 
-.block .obj {
+.block__object {
     font-size:       20px;
     padding-left:    1ch;
 }
 
-.block .obj .date {
+.object__date {
     display:         inline-block;
     font-size:       18px;
 }
 
-.block .obj .date::after {
+.object__date::after {
     content:         ' - ';
 }
 
-
-/* Other */
-.about {
-    display:         flex;
-    flex-direction:  row;
-    flex-wrap:       wrap;
-    justify-content: left;
-    align-items:     left;
+.about-block {
+    font-size:       18px;
+    margin:          2ch auto;
 }
 
-.code {
+.code-block {
     background:      var(--color-code);
     border-bottom:   1px solid var(--color-text);
     font-size:       14px;
@@ -167,4 +170,32 @@ ul .title {
     color:           var(--color-back);
     background:      var(--color-text);
     text-decoration: none;
+}
+
+
+/* Decoration */
+:focus, :active {
+    outline:         none;
+}
+
+::-webkit-scrollbar {
+    width:           1ch;
+    height:          1ch;
+}
+  
+::-webkit-scrollbar-track {
+    background:      var(--color-back);
+}
+
+::-webkit-scrollbar-thumb {
+    background:      var(--color-code);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background:      var(--color-text);
+}
+
+::selection {
+    color:           var(--color-back);
+    background:      var(--color-text);
 }

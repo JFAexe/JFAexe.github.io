@@ -1,7 +1,7 @@
 <!--
     Personal light landing page
 
-    Copyright 2020 Alexandr 'JFAexe' Konichenko
+    Copyright 2021 Alexandr 'JFAexe' Konichenko
 
     Uses
         Minimized Normalize.css
@@ -16,7 +16,7 @@
 
 <head>
     <meta charset = 'UTF-8'>
-    <meta name = 'viewport' content = 'width = device-width, initial-scale = 0.8'>
+    <meta name = 'viewport' content = 'width = device-width, initial-scale = 1.0'>
 
     <link rel = 'shortcut icon' type = 'image/x-icon' href = 'icon.png'>
 
@@ -30,51 +30,61 @@
 </head>
 
 <body>
-    <header>
-        <h1>JFAexe</h1> 
-        <p>coding and drawing stuff</p>
+    <header class = 'header'>
+        <h1>JFAexe</h1>
+        <p>coding and drawing things</p>
     </header>
 
-    <nav>
+    <nav class = 'nav'>
         <a target = '_blank' href = 'https://jfaexe.itch.io/'>Itch.io</a>
         <a target = '_blank' href = 'https://github.com/JFAexe'>Github</a>
         <span> | </span>
         <a href = 'about.html'>About</a>
         <span> | </span>
-        <a id = '_theme_btn' href = '#'>Dark</a>
+        <a id = '_dark_btn'>Dark</a>
+        <a id = '_soft_btn'>Soft</a>
     </nav>
 
     <main>
         <div class = 'content-block'>
-            <span class = 'block__title'>Game Assets</span>
+            <span class = 'block-title'>Game Assets</span>
 
-            <div class = 'block__object'>
-                <span class = 'object__date'>Apr 20, 2019</span>
+            <div class = 'block-object'>
+                <span class = 'object-date'>Apr 20, 2019</span>
                 <a target = '_blank' href = 'https://jfaexe.itch.io/simple-pixel-spaceships'>Simple Pixel Spaceships</a>
             </div>
 
-            <div class = 'block__object'>
-                <span class = 'object__date'>Apr 26, 2019</span>
+            <div class = 'block-object'>
+                <span class = 'object-date'>Apr 26, 2019</span>
                 <a target = '_blank' href = 'https://jfaexe.itch.io/nt-like-sprites-pack'>NT Like Sprites Pack</a>
             </div>
-            
-            <div class = 'block__object'>
-                <span class = 'object__date'>Oct 22, 2019</span>
+
+            <div class = 'block-object'>
+                <span class = 'object-date'>Oct 22, 2019</span>
                 <a target = '_blank' href = 'https://jfaexe.itch.io/lowrez-action-pack'>Lowrez Action Pack</a>
             </div>
         </div>
 
         <div class = 'content-block'>
-            <span class = 'block__title'>Gmod Projects</span>
+            <span class = 'block-title'>Gmod Projects</span>
 
-            <div class = 'block__object'>
-                <span class = 'object__date'>Jul 22, 2020</span>
+            <div class = 'block-object'>
+                <span class = 'object-date'>Jul 22, 2020</span>
                 <a target = '_blank' href = 'https://github.com/JFAexe/Gmod-Custom-Quake-Base'>Custom Quake Base</a>
             </div>
 
-            <div class = 'block__object'>
-                <span class = 'object__date'>Aug 22, 2020</span>
+            <div class = 'block-object'>
+                <span class = 'object-date'>Aug 22, 2020</span>
                 <a target = '_blank' href = 'https://github.com/JFAexe/Control-HUD'>Control HUD</a>
+            </div>
+        </div>
+
+        <div class = 'content-block'>
+            <span class = 'block-title'>Unity Projects</span>
+
+            <div class = 'block-object'>
+                <span class = 'object-date'>Jan 07, 2021</span>
+                <a target = '_blank' href = 'https://github.com/JFAexe/Rigidbody-Controller'>Simple Rigidbody Controller</a>
             </div>
         </div>
     </main>

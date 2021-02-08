@@ -1,7 +1,7 @@
 <!--
     Personal light landing page
 
-    Copyright 2020 Alexandr 'JFAexe' Konichenko
+    Copyright 2021 Alexandr 'JFAexe' Konichenko
 
     Uses
         Minimized Normalize.css
@@ -16,7 +16,7 @@
 
 <head>
     <meta charset = 'UTF-8'>
-    <meta name = 'viewport' content = 'width = device-width, initial-scale = 0.8'>
+    <meta name = 'viewport' content = 'width = device-width, initial-scale = 1.0'>
 
     <link rel = 'shortcut icon' type = 'image/x-icon' href = 'icon.png'>
 
@@ -30,15 +30,16 @@
 </head>
 
 <body>
-    <header>
-        <h1>About</h1> 
+    <header class = 'header'>
+        <h1>About</h1>
         <p>some information about me</p>
     </header>
 
-    <nav>
+    <nav class = 'nav'>
         <a href = 'index.html'>Home</a>
         <span> | </span>
-        <a id = '_theme_btn' href = '#'>Dark</a>
+        <a id = '_dark_btn'>Dark</a>
+        <a id = '_soft_btn'>Soft</a>
     </nav>
 
     <main>
@@ -47,21 +48,8 @@
             <p>Russian coder / artist. Interested in game development and modding.</p>
             <p>In love with pixel / voxel art, retro / simplistic style, electronic music.</p>
             <p>Fave games: Hotline Miami, Dying Light, Titanfall 2, Control.</p>
+            <p>Fave languages: C#, Rust, Go, Lua.</p>
         </div>
-
-        <ul class = 'about-block'>
-            <span class = 'ul__title'>Experience:</span>
-            <li>Lua - 3 years</li>
-            <li>HTML / CSS - 2 years</li>
-        </ul>
-
-        <ul class = 'about-block'>
-            <span class = 'ul__title'>Interested in learning:</span>
-            <li>C#</li>
-            <li>D</li>
-            <li>Go</li>
-            <li>Rust</li>
-        </ul>
     </main>
 </body>
 

@@ -1,7 +1,7 @@
 /*
     Personal light landing page
 
-    Copyright 2020 Alexandr 'JFAexe' Konichenko
+    Copyright 2021 Alexandr 'JFAexe' Konichenko
 
     Uses
         Minimized Normalize.css
@@ -11,23 +11,26 @@
 */
 
 {
-    let doc = document,
-        lsg = localStorage,
-        btn = doc.getElementById('_theme_btn'),
-        bcl = doc.body.classList,
-        cls = 'darkmode',
-        tag = 'theme',
-        upd = () => btn.textContent = bcl.contains(cls) ? 'Dark' : 'Light'
+    function addThemeButton(btn, tag, cls, ift, iff, lst, stg) {
+        let upd = () => btn.textContent = bcl.contains(cls) ? ift : iff
 
-    if (JSON.parse(lsg.getItem(tag))) {
-        upd()
+        if (JSON.parse(stg.getItem(tag))) {
+            upd()
 
-        bcl.add(cls)
+            lst.add(cls)
+        }
+
+        btn.addEventListener('click', () => {
+            upd()
+
+            stg.setItem(tag, lst.toggle(cls))
+        })
     }
 
-    btn.addEventListener('click', () => {
-        upd()
+    let doc = document,
+        lsg = localStorage,
+        bcl = doc.body.classList
 
-        lsg.setItem(tag, bcl.toggle(cls))
-    })
+    addThemeButton(doc.getElementById('_dark_btn'), 'dark', 'darkmode', 'Dark', 'Light', bcl, lsg)
+    addThemeButton(doc.getElementById('_soft_btn'), 'soft', 'softmode', 'Soft', 'Hard', bcl, lsg)
 }

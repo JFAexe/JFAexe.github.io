@@ -1,7 +1,7 @@
 /*
     Personal light landing page
 
-    Copyright 2020 Alexandr 'JFAexe' Konichenko
+    Copyright 2021 Alexandr 'JFAexe' Konichenko
 
     Uses
         Minimized Normalize.css
@@ -10,18 +10,33 @@
             https://fonts.google.com/specimen/Anonymous+Pro
 */
 
+@charset 'UTF-8';
+
 /* Theme colors */
 :root {
-    --color-white:   #fff;
-    --color-black:   #000;
-    --color-lgray:   #eee;
-    --color-dgray:   #111;
+    --color-white:   #ffffff;
+    --color-black:   #000000;
+    --color-lgray:   #e0e0e0;
+    --color-dgray:   #101010;
+    --color-accnt:   #FF5900;
 }
 
 .darkmode {
     --color-back:    var(--color-black);
     --color-text:    var(--color-white);
     --color-code:    var(--color-dgray);
+}
+
+.softmode {
+    --color-back:    var(--color-lgray);
+    --color-text:    var(--color-dgray);
+    --color-code:    var(--color-white);
+}
+
+.softmode.darkmode {
+    --color-back:    var(--color-dgray);
+    --color-text:    var(--color-lgray);
+    --color-code:    var(--color-black);
 }
 
 
@@ -39,35 +54,11 @@ body {
     color:           var(--color-text);
     font-family:     'Anonymous Pro', monospace;
     line-height:     1.6;
-    margin:          6vh auto 0;
+    margin:          2ch auto;
     max-width:       740px;
     padding:         4vw 4vh;
     transition:      background 0.2s ease-in-out, color 0.2s ease-in-out;
     cursor:          default;
-}
-
-header {
-    text-decoration: none;
-    margin:          -4px;
-}
-
-header h1 {
-    color:           var(--color-back);
-    background:      var(--color-text);
-    font-size:       48px;
-    margin:          0;
-    padding-left:    0.5ch;
-    word-break:      break-all;
-}
-
-header p {
-    margin:          4px 0;
-    padding-left:    0.5ch;
-}
-
-nav {
-    font-size:       20px;
-    margin-top:      0.5ch;
 }
 
 h1 {
@@ -88,8 +79,9 @@ a:hover {
     margin:          -4px;
 }
 
-p {
+p, pre {
     margin:          0;
+    padding:         0;
 }
 
 pre {
@@ -103,47 +95,62 @@ hr {
     height:          1px;
 }
 
-ul {
-    list-style:      square outside;
-    margin:          0 2ch;
-    padding-left:    2ch;
+img {
+    max-width:       calc(100% - 2ch);
+    height:          auto;
+    margin:          1ch auto;
 }
 
-ul li::before {
-    width:           2ch;
-}
-
-ul .ul__title {
-    margin-left:     -2ch;
+.softmode, .darkmode img {
+    filter:          brightness(.9) contrast(1.1);
 }
 
 
 /* Elements */
+.accent {
+    color:           var(--color-accnt);
+}
+
+.header {
+    text-decoration: none;
+    margin:          -4px;
+}
+
+.header h1 {
+    color:           var(--color-back);
+    background:      var(--color-text);
+    font-size:       48px;
+    margin:          0;
+    padding-left:    0.5ch;
+    word-break:      break-all;
+}
+
+.header p {
+    margin:          4px 0;
+    padding-left:    0.5ch;
+}
+
+.nav {
+    font-size:       20px;
+    margin-top:      0.5ch;
+}
+
 .content-block {
     margin:          0.5ch auto;
-}
-
-.block__title {
-    font-size:       28px;
-}
-
-.block__object {
-    font-size:       20px;
-    padding-left:    1ch;
-}
-
-.object__date {
-    display:         inline-block;
-    font-size:       18px;
-}
-
-.object__date::after {
-    content:         ' - ';
 }
 
 .about-block {
     font-size:       18px;
     margin:          2ch auto;
+}
+
+.quote-block {
+    background:      var(--color-code);
+    border-left:     1px solid var(--color-text);
+    font-size:       18px;
+    tab-size:        4;
+    margin:          1ch;
+    padding:         1ch 1.2ch;
 }
 
 .code-block {
@@ -152,7 +159,39 @@ ul .ul__title {
     font-size:       14px;
     tab-size:        4;
     margin:          1ch;
-    padding:         1ch;
+    padding:         1.2ch;
+}
+
+.block-title {
+    font-size:       28px;
+}
+
+.block-object {
+    font-size:       20px;
+    padding-left:    1ch;
+}
+
+.object-date {
+    display:         inline-block;
+    font-size:       18px;
+}
+
+.object-date::after {
+    content:         ' - ';
+}
+
+.list {
+    list-style:      square outside;
+    margin:          0 2ch;
+    padding-left:    2ch;
+}
+
+.list li::before {
+    width:           2ch;
+}
+
+.list .ul-title {
+    margin-left:     -2ch;
 }
 
 .button {
@@ -181,7 +220,7 @@ ul .ul__title {
     width:           1ch;
     height:          1ch;
 }
-  
+
 ::-webkit-scrollbar-track {
     background:      var(--color-back);
 }

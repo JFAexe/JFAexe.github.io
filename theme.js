@@ -11,7 +11,11 @@
 */
 
 {
-    function addThemeButton(btn, tag, cls, ift, iff, lst, stg) {
+    let doc = document,
+        lsg = localStorage,
+        bcl = doc.body.classList
+
+    function addThemeButton(btn, tag, cls, ift, iff, lst = bcl, stg = lsg) {
         let upd = () => btn.textContent = bcl.contains(cls) ? ift : iff
 
         if (JSON.parse(stg.getItem(tag))) {
@@ -27,10 +31,6 @@
         })
     }
 
-    let doc = document,
-        lsg = localStorage,
-        bcl = doc.body.classList
-
-    addThemeButton(doc.getElementById('_dark_btn'), 'dark', 'darkmode', 'Dark', 'Light', bcl, lsg)
-    addThemeButton(doc.getElementById('_soft_btn'), 'soft', 'softmode', 'Soft', 'Hard', bcl, lsg)
+    addThemeButton(doc.getElementById('_dark_btn'), 'dark', 'darkmode', 'Dark', 'Light')
+    addThemeButton(doc.getElementById('_soft_btn'), 'soft', 'softmode', 'Soft', 'Hard')
 }

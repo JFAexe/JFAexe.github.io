@@ -4,8 +4,8 @@
     Copyright 2021 Alexandr 'JFAexe' Konichenko
 
     Uses
-        Minimized Normalize.css
-            https://github.com/necolas/normalize.css
+        Minimized Modern Normalize
+            https://github.com/sindresorhus/modern-normalize
         Anonymous Pro font
             https://fonts.google.com/specimen/Anonymous+Pro
 */

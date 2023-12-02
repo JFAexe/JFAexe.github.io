@@ -1,0 +1,26 @@
+@charset "utf-8";
+:root { font-size: 62.5%; --color-background: white; --color-text: black; --color-highlight: lightgray; --border: 1px solid var(--color-text) }
+html { scroll-behavior: smooth; overflow-x: hidden; scrollbar-gutter: stable both-edges }
+body { color: var(--color-text); background: var(--color-background); max-width: 42em; margin: 1em auto; padding: 0 0.25em 2em; font: 2em monospace; line-height: 1.25em; tab-size: 4 }
+h1, h2, h3 { margin: 0 0 0.25em; line-height: 1.25em }
+header h1 { margin: 0 }
+p { margin: 0 0 0.65em }
+a { color: var(--color-text); text-decoration: none; border-bottom: var(--border) }
+a:hover { color: var(--color-background); background: var(--color-text); border: none; padding: 0.15em; margin: -0.15em }
+hr { background: var(--color-text); height: 1px; margin: 0.25em auto; border: none }
+img { display: block; max-width: 100%; margin: 0.25em auto }
+mark { background: var(--color-highlight); padding: 0.15em; margin: -0.15em }
+code { display: block; overflow-x: auto; margin: 0.5em }
+.left-grid { display: grid; grid-template-columns: 1fr auto }
+.outline { border: var(--border); background: var(--color-background) }
+.shadow { box-shadow: 3px 3px var(--color-highlight) }
+.block { padding: 0.5em 0.75em; margin-bottom: 1em }
+.block :last-child { margin-bottom: 0 }
+.item { padding: 0 0.75em 0.3em }
+.dash::after { content: " - " }
+.code-line { display: block; white-space: pre; font-weight: bold; padding-left: 0.25em }
+.code-line::after { content: " " }
+::-webkit-scrollbar { width: 0.75em; height: 0.5em }
+::-webkit-scrollbar-track { background: var(--color-highlight); margin: 0.5em }
+::-webkit-scrollbar-thumb { background: var(--color-background); border: var(--border) }
+::-webkit-scrollbar-thumb:hover { background: var(--color-text) }
